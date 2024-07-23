@@ -44,7 +44,7 @@ RUN set -x\
 RUN set -x \
     && mkdir /app -p \
     &&  cd /app \
-    && git clone --progress https://ghproxy.imoyuapp.win/https://github.com/key-networks/ztncui.git\
+    && git clone --progress https://github.hlyun.org/https://github.com/key-networks/ztncui.git\
     && cd /app/ztncui/src \
     && npm config set registry https://registry.npmmirror.com\
     && npm install -g node-gyp\
@@ -61,7 +61,7 @@ ENV ZT_PORT=9994
 ENV API_PORT=3443
 ENV FILE_SERVER_PORT=3000
 
-ENV GH_MIRROR="https://mirror.ghproxy.com/"
+ENV GH_MIRROR="https://github.hlyun.org/"
 ENV FILE_KEY=''
 ENV TZ=Asia/Shanghai
 
